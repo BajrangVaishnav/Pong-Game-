@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100dvh;
+    padding: 20px;
+}
+.head{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.github{
+    height: 50px;
+    width: 50px;
+}
+.container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(4px);
+}
+
+h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-score,
+.computer-score {
+    flex: 1;
+    min-width: 60px;
+}
+
+.player-score h2,
+.computer-score h2 {
+    color: #4ade80;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.player-score p,
+.computer-score p {
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.game-status {
+    color: #fbbf24;
+    font-size: 1.2em;
+    font-weight: bold;
+    min-width: 200px;
+}
+
+#gameCanvas {
+    background: #000;
+    border: 3px solid #fff;
+    border-radius: 8px;
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+.controls {
+    color: #e0e7ff;
+    font-size: 0.95em;
+    margin-top: 20px;
+    line-height: 1.8;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.controls strong {
+    color: #fbbf24;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* mobile buttons */
+.mobile-action-btn{
+    display: none;
+}
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    
+    #gameCanvas {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .scoreboard {
+        margin-bottom: 15px;
+        gap: 10px;
+    }
+
+    .game-status{
+        display: none;
+    }
+    
+    .controls {
+        font-size: 0.85em;
+    }
+
+    .mobile-action-btn{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .mobile-action-btn #btn-play{
+        height: 50px;
+        width: 65px;
+        border-radius: 15px;
+    }
+    .mobile-action-btn .btn-lr{
+        height: 50px;
+        width: 100px;
+        border-radius: 15px;
+    }
+    .controls{
+        display: none;
+    }
+}
