@@ -6,7 +6,10 @@ Play against an AI-controlled opponent, improve your reflexes, and enjoy a simpl
 
 ## 🚀 Live Demo
 
-**[Play Pong Game](https://github.com/BajrangVaishnav/Pong-Game-/)**
+**[Play Pong Game](https://bajrangvaishnav.github.io/Pong-Game-/)**
+
+## 🖼️ Images
+<img width="1353" height="552" alt="image" src="https://github.com/user-attachments/assets/cfdbfc6a-e27a-49c5-800c-19fcc6964463" />
 
 ## ✨ Features
 
